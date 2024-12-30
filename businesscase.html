@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pritesh Kotur</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .code-container {
+        background-color: #282c34;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-family: 'Courier New', monospace;
+    }
+
+    .code-container h3 {
+        text-align: center;
+        color: #00bcd4;
+        margin-bottom: 20px;
+    }
+
+    .code-box {
+        background-color: #2d2d2d;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    pre {
+        margin: 0;
+        font-size: 1rem;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    code {
+        color: #f8f8f2;
+    }
+
+    .cpp {
+        color: #f8f8f2;
+    }
+
+    .cpp .keyword {
+        color: #ff79c6;
+    }
+
+    .cpp .string {
+        color: #f1fa8c;
+    }
+
+    .cpp .number {
+        color: #bd93f9;
+    }
+
+    .cpp .comment {
+        color: #6272a4;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+      
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><span class="fs-5">DAA</span></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Introduction</a>
+                        <a href="courseproject.html" class="nav-item nav-link active">Course Project</a>
+                        <a href="coursereflexation.html" class="nav-item nav-link">Course Reflections</a>
+            
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">Businesses Case</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center" style="margin-right:2rem;">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Introduction</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Course Project</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Course Reflections</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container px-lg-5 " style="height:500px">
+                <div class="row align-items-center" style="height: 250px;">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-white" style="text-decoration: underline; margin-top:3.5rem">Smart Traffic Management System</h3>
+                        <div class="w-100 mt-3" style="text-align: justify; color: whitesmoke;" style="font-family:Georgia">
+                            Growing traffic congestion, ineffective traffic management, and growing road safety issues are major challenges for urban regions around the world. Due to their inability to adjust to real-time traffic circumstances and their fixed signal timings and manual interventions, traditional traffic systems frequently result in accidents, delays, and increased fuel consumption and carbon emissions. Additionally, these problems are made worse by the absence of predictive methods for addressing crises and peak-hour traffic, which has a detrimental effect on commuters and urban mobility. This emphasizes the necessity of an intelligent, real-time solution that makes use of cutting-edge technology like machine learning, the Internet of Things, and optimization algorithms in order to dynamically control traffic flow, lessen congestion, and improve road safety. In order to overcome these obstacles, a Smart Traffic Management System (STMS) offers an effective, data-driven, and adaptable traffic control system.
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                        <!-- <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png"> -->
+                        <iframe src="https://lottie.host/embed/d19a2f40-f3ee-45fb-ae54-029f3a22627f/V3AmvjqHMY.lottie" style="height: 20rem;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-xxl py-5 bg-light">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2 class="text-primary fw-bold wow zoomIn" data-wow-delay="0.1s">Algorithmic Problem-Solving Techniques in STMS</h2>
+                    <p class="text-muted wow fadeInUp" data-wow-delay="0.2s">
+                        Discover how advanced algorithms optimize smart traffic management systems for efficiency and sustainability.
+                    </p>
+                </div>
+        
+                <div class="row g-5">
+                    <!-- Dijkstra’s Algorithm -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm wow slideInLeft" data-wow-delay="0.3s">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-4">
+                                    <i class="bi bi-geo-alt text-primary fs-1"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Dijkstra’s Algorithm</h5>
+                                <p class="card-text">
+                                    <strong>Purpose:</strong> Finds the shortest path between two points.<br>
+                                    <strong>Applications:</strong> Real-time route optimization, dynamic rerouting to avoid congestion, and shortest path calculations in navigation systems.<br>
+                                    <strong>Working:</strong> Weighted graphs with nodes as intersections and edges as roads, using traffic density as weights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- AVL Tree -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm wow zoomIn" data-wow-delay="0.4s">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-4">
+                                    <i class="bi bi-diagram-3 text-success fs-1"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">AVL Tree</h5>
+                                <p class="card-text">
+                                    <strong>Purpose:</strong> Maintains a sorted dataset with self-balancing properties.<br>
+                                    <strong>Applications:</strong> Fast indexing of live traffic data, adaptive signal control, and emergency vehicle prioritization.<br>
+                                    <strong>Advantages:</strong> Ensures O(log n) efficiency for real-time data retrieval and updates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Kruskal’s Algorithm -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm wow slideInRight" data-wow-delay="0.5s">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-4">
+                                    <i class="bi bi-graph-up text-warning fs-1"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Kruskal’s Algorithm</h5>
+                                <p class="card-text">
+                                    <strong>Purpose:</strong> Finds the minimum spanning tree (MST) in a graph.<br>
+                                    <strong>Applications:</strong> Optimizes road network layouts, minimizes sensor installation costs, and ensures connectivity for resource scaling.<br>
+                                    <strong>Advantages:</strong> Handles sparse graphs efficiently for scalable urban planning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-xxl py-5 bg-light">
+            <div class="container">
+        
+                <!-- Step-by-Step Algorithm Section -->
+                <div class="section-title text-center mt-5">
+                    <h3 class="text-primary fw-bold wow zoomIn" data-wow-delay="0.1s">Step-by-Step Algorithm</h3>
+                    <p class="text-muted wow fadeInUp" data-wow-delay="0.2s">Detailed step-by-step breakdown of each algorithm for better understanding.</p>
+                </div>
+        
+                <div class="row">
+                    <!-- Kruskal's Algorithm -->
+                    <div class="col-md-4">
+                        <div class="card shadow-lg border-0 rounded-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Kruskal's Algorithm for Sensor Placement</h5>
+                                <p><strong>Objective:</strong> Find the optimal placement of sensors using the Minimum Spanning Tree (MST).</p>
+                                <p><strong>Steps:</strong></p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">1. Sort all edges by weight (cost).</li>
+                                    <li class="list-group-item">2. Initialize a Disjoint-Set (Union-Find) data structure.</li>
+                                    <li class="list-group-item">3. Iterate through all edges in sorted order:</li>
+                                    <li class="list-group-item">   a. Use the find operation to check if the edge connects different components.</li>
+                                    <li class="list-group-item">   b. If they are in different components, add the edge to the MST using the union operation.</li>
+                                    <li class="list-group-item">4. Stop when the MST contains V-1 edges (V = number of vertices).</li>
+                                    <li class="list-group-item">5. Output the selected edges for the MST (optimal sensor placement).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Dijkstra's Algorithm -->
+                    <div class="col-md-4">
+                        <div class="card shadow-lg border-0 rounded-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Dijkstra's Algorithm for Traffic Routing</h5>
+                                <p><strong>Objective:</strong> Find the shortest path from a starting intersection to all other intersections.</p>
+                                <p><strong>Steps:</strong></p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">1. Initialize a priority queue (min-heap) to track the node with the smallest distance.</li>
+                                    <li class="list-group-item">2. Set the distance to the source node as 0 and all others as infinity (INT_MAX).</li>
+                                    <li class="list-group-item">3. Start from the source node and push it into the priority queue.</li>
+                                    <li class="list-group-item">4. Extract the node with the minimum distance from the priority queue.</li>
+                                    <li class="list-group-item">5. Relax all adjacent edges, update distances for neighbors, and push updated distances into the priority queue.</li>
+                                    <li class="list-group-item">6. Repeat until all nodes are processed.</li>
+                                    <li class="list-group-item">7. Output the shortest distance from the source to each destination node.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- AVL Tree for Data Storage -->
+                    <div class="col-md-4">
+                        <div class="card shadow-lg border-0 rounded-3">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">AVL Tree for Traffic Data Storage</h5>
+                                <p><strong>Objective:</strong> Store and maintain traffic data efficiently using a balanced tree structure.</p>
+                                <p><strong>Steps:</strong></p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">1. Insert traffic data (intersection name and vehicle count) into the AVL tree.</li>
+                                    <li class="list-group-item">2. Balance the tree after each insertion to maintain height difference between left and right subtrees ≤ 1.</li>
+                                    <li class="list-group-item">3. Perform rotations (left or right) to maintain balance when necessary.</li>
+                                    <li class="list-group-item">4. Perform an in-order traversal to print traffic data sorted by intersection names.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workflow Section Title -->
+<div class="section-title text-center mt-5">
+    <h3 class="text-primary fw-bold wow zoomIn" data-wow-delay="0.1s">Workflow for STMS Implementation</h3>
+    <p class="text-muted wow fadeInUp" data-wow-delay="0.2s">Follow this structured workflow for seamless STMS deployment and optimization.</p>
+</div>
+
+<!-- Workflow Steps -->
+<div class="row g-4">
+    <!-- Step 1: Graph Setup -->
+    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">1. Graph Setup (Road Network)</h5>
+                <div class="icon-box mb-4">
+                    <i class="bi bi-map text-info fs-2"></i>
+                </div>
+                <p>Create a graph representing the road network with edges between intersections, each edge weighted by road lengths or travel times.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 2: Kruskal's Algorithm for Sensor Placement -->
+    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.4s">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">2. Kruskal's Algorithm for Sensor Placement</h5>
+                <div class="icon-box mb-4">
+                    <i class="bi bi-gear-fill text-success fs-2"></i>
+                </div>
+                <p>Sort the graph edges by weight and apply Kruskal’s Algorithm to determine the Minimum Spanning Tree (MST), identifying where sensors should be placed to minimize monitoring costs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 3: Dijkstra’s Algorithm for Routing -->
+    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">3. Dijkstra’s Algorithm for Routing</h5>
+                <div class="icon-box mb-4">
+                    <i class="bi bi-arrow-right-circle-fill text-primary fs-2"></i>
+                </div>
+                <p>Use Dijkstra's algorithm to calculate the shortest paths from a given source intersection to all other intersections, optimizing traffic flow.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 4: AVL Tree for Traffic Data Storage -->
+    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">4. AVL Tree for Traffic Data Storage</h5>
+                <div class="icon-box mb-4">
+                    <i class="bi bi-archive-fill text-warning fs-2"></i>
+                </div>
+                <p>Store traffic data (vehicle counts) in an AVL tree to maintain a balanced structure, ensuring efficient data retrieval and updates.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 5: Output Results -->
+    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.7s">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">5. Output Results</h5>
+                <div class="icon-box mb-4">
+                    <i class="bi bi-bar-chart-fill text-danger fs-2"></i>
+                </div>
+                <p>Display the MST edges for sensor placement, the shortest path from the source to all other intersections, and the sorted traffic data from the AVL tree.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS for Spacing and Alignment Fixes -->
+
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="code-container">
+            <h3 class="text-center  mt-4">C++ Code for Smart Traffic Management System</h3>
+            <div class="code-box">
+                <pre><code class="cpp">
+        #include &lt;iostream&gt;
+        #include &lt;vector&gt;
+        #include &lt;queue&gt;
+        #include &lt;climits&gt;
+        #include &lt;unordered_map&gt;
+        #include &lt;algorithm&gt;
+        
+        using namespace std;
+        
+        // Dijkstra's Algorithm for Traffic Routing
+        class DijkstraGraph {
+        public:
+            unordered_map&lt;string, unordered_map&lt;string, int&gt;&gt; adjList;
+        
+            void addEdge(const string&amp; u, const string&amp; v, int weight) {
+                adjList[u][v] = weight;
+                adjList[v][u] = weight;
+            }
+        
+            unordered_map&lt;string, int&gt; dijkstra(const string&amp; start) {
+                unordered_map&lt;string, int&gt; dist;
+                for (auto&amp; node : adjList) {
+                    dist[node.first] = INT_MAX;
+                }
+                dist[start] = 0;
+        
+                priority_queue&lt;pair&lt;int, string&gt;, vector&lt;pair&lt;int, string&gt;&gt;, greater&lt;&gt;&gt; pq;
+                pq.push({0, start});
+        
+                while (!pq.empty()) {
+                    int currentDist = pq.top().first;
+                    string currentNode = pq.top().second;
+                    pq.pop();
+        
+                    if (currentDist &gt; dist[currentNode]) continue;
+        
+                    for (auto&amp; neighbor : adjList[currentNode]) {
+                        string nextNode = neighbor.first;
+                        int weight = neighbor.second;
+                        int newDist = currentDist + weight;
+        
+                        if (newDist &lt; dist[nextNode]) {
+                            dist[nextNode] = newDist;
+                            pq.push({newDist, nextNode});
+                        }
+                    }
+                }
+                return dist;
+            }
+        };
+        
+        // AVL Tree for Traffic Data Storage
+        class AVLNode {
+        public:
+            string key;
+            int value;
+            int height;
+            AVLNode* left;
+            AVLNode* right;
+        
+            AVLNode(const string&amp; key, int value)
+                : key(key), value(value), height(1), left(nullptr), right(nullptr) {}
+        };
+        
+        class AVLTree {
+        private:
+            AVLNode* root;
+        
+            int height(AVLNode* node) {
+                return node ? node->height : 0;
+            }
+        
+            int balanceFactor(AVLNode* node) {
+                return node ? height(node->left) - height(node->right) : 0;
+            }
+        
+            AVLNode* rotateRight(AVLNode* y) {
+                AVLNode* x = y->left;
+                AVLNode* T2 = x->right;
+                x->right = y;
+                y->left = T2;
+        
+                y->height = max(height(y->left), height(y->right)) + 1;
+                x->height = max(height(x->left), height(x->right)) + 1;
+        
+                return x;
+            }
+        
+            AVLNode* rotateLeft(AVLNode* x) {
+                AVLNode* y = x->right;
+                AVLNode* T2 = y->left;
+                y->left = x;
+                x->right = T2;
+        
+                x->height = max(height(x->left), height(x->right)) + 1;
+                y->height = max(height(y->left), height(y->right)) + 1;
+        
+                return y;
+            }
+        
+            AVLNode* insert(AVLNode* node, const string&amp; key, int value) {
+                if (!node) return new AVLNode(key, value);
+        
+                if (key &lt; node->key)
+                    node->left = insert(node->left, key, value);
+                else if (key &gt; node->key)
+                    node->right = insert(node->right, key, value);
+                else
+                    return node;
+        
+                node->height = 1 + max(height(node->left), height(node->right));
+        
+                int balance = balanceFactor(node);
+        
+                if (balance &gt; 1 && key &lt; node->left->key) {
+                    return rotateRight(node);
+                }
+        
+                if (balance &lt; -1 && key &gt; node->right->key) {
+                    return rotateLeft(node);
+                }
+        
+                if (balance &gt; 1 && key &gt; node->left->key) {
+                    node->left = rotateLeft(node->left);
+                    return rotateRight(node);
+                }
+        
+                if (balance &lt; -1 && key &lt; node->right->key) {
+                    node->right = rotateRight(node->right);
+                    return rotateLeft(node);
+                }
+        
+                return node;
+            }
+        
+            void inOrder(AVLNode* node) {
+                if (node) {
+                    inOrder(node->left);
+                    cout &lt;&lt; node->key &lt;&lt; ": " &lt;&lt; node->value &lt;&lt; endl;
+                    inOrder(node->right);
+                }
+            }
+        
+        public:
+            AVLTree() : root(nullptr) {}
+        
+            void insert(const string&amp; key, int value) {
+                root = insert(root, key, value);
+            }
+        
+            void display() {
+                inOrder(root);
+            }
+        };
+        
+        // Kruskal's Algorithm for Sensor Placement
+        class DisjointSet {
+        public:
+            vector&lt;int&gt; parent, rank;
+        
+            DisjointSet(int n) {
+                parent.resize(n);
+                rank.resize(n, 0);
+                for (int i = 0; i &lt; n; i++) parent[i] = i;
+            }
+        
+            int find(int x) {
+                if (x != parent[x]) parent[x] = find(parent[x]);
+                return parent[x];
+            }
+        
+            void unionSets(int x, int y) {
+                int rootX = find(x);
+                int rootY = find(y);
+                if (rootX != rootY) {
+                    if (rank[rootX] &gt; rank[rootY]) {
+                        parent[rootY] = rootX;
+                    } else if (rank[rootX] &lt; rank[rootY]) {
+                        parent[rootX] = rootY;
+                    } else {
+                        parent[rootY] = rootX;
+                        rank[rootX]++;
+                    }
+                }
+            }
+        };
+        
+        class Edge {
+        public:
+            int u, v, weight;
+        
+            Edge(int u, int v, int weight) : u(u), v(v), weight(weight) {}
+        
+            bool operator&lt;(const Edge&amp; e) const {
+                return weight &lt; e.weight;
+            }
+        };
+        
+        class KruskalGraph {
+        public:
+            int V;
+            vector&lt;Edge&gt; edges;
+        
+            KruskalGraph(int V) : V(V) {}
+        
+            void addEdge(int u, int v, int weight) {
+                edges.push_back(Edge(u, v, weight));
+            }
+        
+            void kruskal() {
+                sort(edges.begin(), edges.end());
+        
+                DisjointSet ds(V);
+                vector&lt;Edge&gt; mst;
+        
+                for (Edge&amp; e : edges) {
+                    int u = e.u;
+                    int v = e.v;
+        
+                    if (ds.find(u) != ds.find(v)) {
+                        ds.unionSets(u, v);
+                        mst.push_back(e);
+                    }
+                }
+        
+                cout &lt;&lt; "Selected edges for sensor placement (MST):" &lt;&lt; endl;
+                for (Edge&amp; e : mst) {
+                    cout &lt;&lt; "Edge: " &lt;&lt; e.u &lt;&lt; " - " &lt;&lt; e.v &lt;&lt; ", Cost: " &lt;&lt; e.weight &lt;&lt; endl;
+                }
+            }
+        };
+        
+        int main() {
+            // 1. Graph Setup (Road Network)
+            KruskalGraph g(4);
+            g.addEdge(0, 1, 1);
+            g.addEdge(1, 2, 2);
+            g.addEdge(2, 3, 3);
+            g.addEdge(0, 2, 2);
+            g.addEdge(1, 3, 1);
+        
+            cout &lt;&lt; "Optimal Sensor Placement using Kruskal's Algorithm:" &lt;&lt; endl;
+            g.kruskal();
+        
+            // 2. Dijkstra's Algorithm for Routing
+            DijkstraGraph roadNetwork;
+            roadNetwork.addEdge("A", "B", 1);
+            roadNetwork.addEdge("A", "C", 4);
+            roadNetwork.addEdge("B", "C", 2);
+            roadNetwork.addEdge("B", "D", 6);
+            roadNetwork.addEdge("C", "D", 3);
+        
+            unordered_map&lt;string, int&gt; shortestPaths = roadNetwork.dijkstra("A");
+            cout &lt;&lt; "\nShortest Path from A to other intersections (using Dijkstra's Algorithm):" &lt;&lt; endl;
+            for (auto&amp; node : shortestPaths) {
+                cout &lt;&lt; "A to " &lt;&lt; node.first &lt;&lt; " : " &lt;&lt; node.second &lt;&lt; endl;
+            }
+        
+            // 3. AVL Tree for Traffic Data
+            AVLTree trafficData;
+            trafficData.insert("Intersection A", 30);
+            trafficData.insert("Intersection B", 50);
+            trafficData.insert("Intersection C", 40);
+            trafficData.insert("Intersection D", 20);
+        
+            cout &lt;&lt; "\nTraffic Data at Intersections (AVL Tree):" &lt;&lt; endl;
+            trafficData.display();
+        
+            return 0;
+        }
+                </code></pre>
+            </div>
+        </div>
+        
+       
+        
+
+        
+        
+                
+       
+
+
+
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row">
+                    <!-- Footer Branding -->
+                    <div class="col-lg-6 col-md-6">
+                        <h5 class="text-uppercase mb-3" style="color:white">DAA Portfolio</h5>
+                        <p class="mb-0">
+                            Dedicated to showcasing projects and real-world applications of advanced algorithms and data structures.
+                        </p>
+                    </div>
+        
+                    <!-- Quick Links -->
+                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <h5 class="text-uppercase "  style="color:white">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                            <li><a href="#projects" class="text-light text-decoration-none">Projects</a></li>
+                            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact Information -->
+                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <h5 class="text-uppercase mb-3"  style="color:white">Contact Us</h5>
+                        <p class="mb-1">
+                            <i class="fas fa-envelope me-2"></i>koturpritesh@gmail.com
+                        </p>
+                        <p class="mb-0">
+                            <i class="fas fa-phone-alt me-2"></i>+91 90199 68839
+                        </p>
+                    </div>
+                </div>
+        
+                <hr class="my-4 border-light">
+                
+                <!-- Footer Bottom -->
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class="mb-0">
+                            &copy; 2024 DAA Portfolio. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
