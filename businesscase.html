@@ -673,7 +673,164 @@
         }
                 </code></pre>
             </div>
+            1. Optimal Sensor Placement (Kruskal's Algorithm)
+            <strong>          Extra Information about code : <br> <br>
+<hr>
+Input:A graph with 4 nodes (0, 1, 2, 3) and weighted edges representing the cost of placing sensors between intersections:
+<br>
+(0, 1, weight 1) <br>
+(1, 2, weight 2) <br>
+(2, 3, weight 3) <br>
+(0, 2, weight 2) <br>
+(1, 3, weight 1) <br>
+Execution:
+Sort Edges by Weight: <br>
+ <br>
+The edges are sorted in ascending order of weights: <br>
+(0, 1, 1), (1, 3, 1), (1, 2, 2), (0, 2, 2), (2, 3, 3). <br>
+Initialize Disjoint Sets: <br>
+
+Each node starts as its own parent, representing separate sets: <br>
+Parent array: [0, 1, 2, 3]. <br>
+Rank array: [0, 0, 0, 0]. <br> <br>
+Iterate through Sorted Edges: <br>
+
+For each edge, check if adding it forms a cycle using the Disjoint Set data structure. If not, add the edge to the Minimum Spanning Tree (MST).
+<br>
+Edge (0, 1, 1): <br>
+Find(0) = 0, Find(1) = 1 (different sets). <br>
+Union(0, 1): Parent[1] = 0. <br>
+MST: [(0, 1, 1)]. <br>
+
+Edge (1, 3, 1): <br>
+Find(1) → Find(0) = 0, Find(3) = 3 (different sets). <br>
+Union(1, 3): Parent[3] = 0. <br>
+MST: [(0, 1, 1), (1, 3, 1)]. <br>
+
+Edge (1, 2, 2): <br>
+Find(1) → Find(0) = 0, Find(2) = 2 (different sets). <br>
+Union(1, 2): Parent[2] = 0. <br>
+MST: [(0, 1, 1), (1, 3, 1), (1, 2, 2)]. <br>
+Edge (0, 2, 2): Skipped (forms a cycle). <br>
+Edge (2, 3, 3): Skipped (forms a cycle). <br>
+
+Output: <br>
+The Minimum Spanning Tree (MST), representing the optimal edges for sensor placement:<br>
+
+(0, 1, weight 1)<br>
+(1, 3, weight 1)<br>
+(1, 2, weight 2) <br>
+
+2. Traffic Routing (Dijkstra's Algorithm)
+<hr>
+Input:
+A graph with intersections and edges representing travel times: <br>
+
+Intersections: A, B, C, D. <br>
+Edges: <br>
+A → B (1), A → C (4), B → C (2), B → D (6), C → D (3). <br>
+Start Point: A. <br>
+Execution: <br>
+
+Initialize Distances: <br>
+Priority Queue: [(0, A)]. <br>
+Distances: {A: 0, B: ∞, C: ∞, D: ∞} (distance to A is 0; others are initially ∞). <br>
+Process Nodes: <br>
+
+
+Node A (distance 0): <br>
+A → B: New distance = 0 + 1 = 1 (update B).
+Relax neighbors: <br>
+Distances: {A: 0, B: 1, C: 4, D: ∞}. <br>
+A → C: New distance = 0 + 4 = 4 (update C). <br>
+Queue: [(1, B), (4, C)]. <br>
+Node B (distance 1): <br>
+
+B → C: New distance = 1 + 2 = 3 (update C). <br>
+Relax neighbors: <br>
+B → D: New distance = 1 + 6 = 7 (update D). <br>
+Distances: {A: 0, B: 1, C: 3, D: 7}. <br>
+Queue: [(3, C), (4, C), (7, D)]. <br>
+Node C (distance 3): <br>
+
+C → D: New distance = 3 + 3 = 6 (update D). <br>
+Relax neighbors: <br>
+Distances: {A: 0, B: 1, C: 3, D: 6}. <br>
+Queue: [(4, C), (7, D), (6, D)]. <br>
+Node D (distance 6): <br>
+
+No updates, as all distances are already optimal. <br>
+Output: <br>
+
+The shortest paths from A to other intersections: <br>
+A → B: 1 <br>
+A → A: 0 <br>
+A → C: 3 <br>
+A → D: 6 <br>
+<br>
+3. Traffic Data Storage (AVL Tree)
+<br>
+Input:
+
+Traffic data at intersections with vehicle counts: <br>
+Intersection B: 50 <br>
+Intersection A: 30 <br>
+Intersection C: 40 <br>
+Intersection D: 20 <br>
+Execution: <br>
+Insert "Intersection A, 30": <br>
+
+Balance factor of A = 0 (tree is balanced). <br>
+AVL tree is empty; A becomes the root. <br>
+Insert "Intersection B, 50": <br>
+
+Balance factor of A = -1 (tree remains balanced). <br>
+Insert B to the right of A (since 50 > 30). <br>
+Insert "Intersection C, 40": <br>
+
+Balance factor of A = -2 (tree becomes unbalanced). <br>
+Insert C to the right of A and left of B (40 lies between 30 and 50). <br>
+Perform Right-Left Rotation to restore balance: <br>
+Step 1: Rotate B → left (C becomes the new right child of A). <br>
+Step 2: Rotate A → right (C becomes the new root). <br>
+Insert "Intersection D, 20": <br>
+
+Balance factor of all nodes remains within -1 to 1. <br>
+Insert D to the left of C and left of A (20 < 30). <br>
+Output: <br>
+The AVL tree, represented by In-Order Traversal (sorted by intersections): <br>
+ <br>
+Intersection A: 30 <br>
+Intersection D: 20 <br>
+Intersection C: 40 <br>
+Intersection B: 50
+<br>
+
+For Combined Output : <br>
+<hr>
+Combined Outputs: <br>
+Optimal Sensor Placement (Kruskal's Algorithm): <br>
+
+Selected edges for Minimum Spanning Tree: <br>
+(0-1, weight 1), (1-3, weight 1), (1-2, weight 2). <br>
+Shortest Paths (Dijkstra's Algorithm): <br>
+
+A → B: 1 <br>
+A → C: 3 <br>
+A → D: 6 <br>
+Traffic Data (AVL Tree): <br>
+
+Intersection D: 20 <br>
+Intersection A: 30 <br>
+Intersection C: 40 <br>
+Intersection B: 50
+
+
+
+
+            </strong>
         </div>
+        
         
        
         
